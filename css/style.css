@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:wght@100;200&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Montserrat:wght@100;200&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:wght@200&display=swap');
+
+
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/about.css");
+@import url("sections/footer.css");
+@import url("sections/popular.css");
+@import url("sections/subscribe.css");
+@import url("sections/trending.css");
+
+
+:root{
+    --playfair-display :"Playfair Display", serif;
+    --playfair-jakarta-sans :"Plus Jakarta Sans", sans-serif;
+
+    --primary-color: #b1454a;
+    --secondary-color: #121212;
+
+    --black-200:#020202;
+    --black-300: #333333;
+    --black-400: #1f1e31;
+    --black-500: #555555;
+    --gray-100: #888888;
+
+    --color-white: #fff;
+    --color-creamson: #fff0de;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color-creamson);
+    margin: 0 auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sushi_subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--playfair-jakarta-sans);
+  
+    color: var(--primary-color);
+    opacity: 0.8;
+  
+    letter-spacing: -0.01em;
+  }
+  
+  .sushi_title {
+    font-size: 64px;
+    font-weight: 600;
+    font-family: var(--playfair-display);
+  
+    color: var(--secondary-color);
+  
+    margin-top: 16px;
+  }
+  
+  .sushi_desc {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--playfair-jakarta-sans);
+  
+    line-height: 36px;
+    letter-spacing: -0.01em;
+  
+    color: var(--secondary-color);
+    opacity: 0.8;
+  
+    margin: 32px 0px;
+  }
+
+  .sushi_hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sushi_hide-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
