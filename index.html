@@ -6,7 +6,7 @@
     <title>Sushi's</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="png" href="/sushi-3.png">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -85,7 +85,7 @@
     <section class="about-us" id="about-us">
         <div class="about-us_image">
             <div class="about-us_image-sushi-3">
-                <img src="imgs/sushi-3.png" alt="sushi-3"/>
+                <img src="imgs/sushi-3.png" alt="sushi-3" data-aos="fade-right"/>
             </div>
 
             <button class="about-us_button">
@@ -94,11 +94,11 @@
             </button>
 
             <div class="about-us_image-sushi-2">
-                <img src="imgs/sushi-2.png" alt="sushi-2"/>
+                <img src="imgs/sushi-2.png" alt="sushi-2" data-aos="fade-right"/>
             </div>
         </div>
 
-        <div class="about-us-content">
+        <div class="about-us-content" data-aos="fade-left">
             <p class="sushi_subtitle">
                 About Us
             </p>
@@ -125,7 +125,7 @@
             </button>
         </div>
 
-        <div class="popular_foods-catalogue">
+        <div class="popular_foods-catalogue" data-aos="zoom-in">
             <article class="popular_foods-card">
                 <img src="imgs/sushi-12.png" alt="sushi-12"/>
                 <h4 class="popular_foods-card-title">Chezu Sushi</h4>
@@ -138,7 +138,7 @@
                 </div>
             </article>
 
-            <article class="popular_foods-card active-card">
+            <article class="popular_foods-card active-card" >
                 <img src="imgs/sushi-11.png" alt="sushi-12"/>
                 <h4 class="popular_foods-card-title">Original Sushi</h4>
                 <div class="popular_foods-card-detail flex-between">
@@ -170,6 +170,12 @@
         </button>
     </section>
 
+    <section></section>
+
     <script src="js/script.js" type="module"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
